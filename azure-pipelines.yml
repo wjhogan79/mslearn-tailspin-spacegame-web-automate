@@ -96,7 +96,7 @@ stages:
 
 - stage: DBAVerificationScript
   displayName: 'Script database schema changes'
-  dependsOn: Provision
+  dependsOn: Build
   jobs:
   - deployment: DBAVerificationScript
     pool:
